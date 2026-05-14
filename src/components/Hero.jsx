@@ -53,14 +53,17 @@ function Hero() {
         </div>
 
         {/*Today's Goal*/}
-        <div className='border border-purple-500/13 rounded-lg  bg-slate-900/60 flex flex-col items-center justify-center w-[350px] h-[500px] mr-15'>
-            <h2 className='text-2xl font-bold'>Today's Goal</h2>
-            <div className='w-40 h-40 rounded-full flex items-center justify-center mt-6 bg-[conic-gradient(theme(colors.purple.600)_0%_75%,theme(colors.purple.950)_75%_100%)] p-4'>
-                <div className='w-full h-full rounded-full bg-black flex items-center justify-center'>
+        <div className='border border-purple-500/13 rounded-lg  bg-slate-900/60  w-[350px] h-[500px] mr-15'>
+            <h2 className='text-2xl font-bold p-7'>Today's Goal</h2>
+            <div className='flex flex-col items-center justify-center'>
+            <div className='w-50 h-50 rounded-full flex items-center justify-center mt-6 bg-[conic-gradient(theme(colors.purple.600)_0%_75%,theme(colors.purple.950)_75%_100%)] p-4'>
+                <div className='w-full h-full rounded-full bg-black flex items-center justify-center flex-col'>
                     <h2 className='text-3xl font-bold'>75%</h2>
+                    
+                    <p className='text-[#94a3b8] block'>Completed</p>
                 </div>
             </div>
-            <div className='flex items-center gap-8 mt-4 p-4  text-center'>
+            <div className='flex items-center gap-8 mt-8 p-4  text-center'>
                 <div>
                     <h2 className='text-3xl font-bold'>
                         450
@@ -86,7 +89,31 @@ function Hero() {
                     </p>
                 </div>
             </div>
+            </div>
         </div>
+        </div>
+
+        {/*Quick Action links*/}
+        <div>
+            <div>
+                <h2>Quick Actions</h2>
+                <div>
+                    <p>Start Workout</p>
+                </div>
+                <div>
+                    <p>Log Water</p>
+                </div>
+                <div>
+                    <p>BMI Calculator</p>
+                </div>
+                <div>
+                    <p>View Progress</p>
+                </div>
+            </div>
+
+            <div>
+                <h2>Water Intake</h2>
+            </div>
         </div>
 
     </div>
