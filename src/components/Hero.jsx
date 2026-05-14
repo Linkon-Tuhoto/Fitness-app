@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/hero-bg.jpeg';
 import { FaHandSparkles, FaFire, FaBell } from "react-icons/fa6";
 
 
@@ -34,20 +34,24 @@ function Hero() {
         </div>
         {/*Hero image*/}
         <div>
-        <div style={{ backgroundImage: 'url(${heroImg})'}}>
+        <div className='h-[500px] w-[75%] bg-cover bg-center relative' style={{ backgroundImage: `url(${heroImg})` }} >
+            <div className='absolute inset-0 bg-black/50'></div>
+            <div className='relative z-10 text-white px-8 mt-10 space-y-6 max-w-lg max-w-[12ch] leading-tight'>
             <p>Focus</p>
-            <h1>
+            <h1 className='text-6xl font-black leading-tight' style={{transform: "skewX(-15deg)" , display: "inline-block"}}>
                 DISCIPLINE
-                <br />
-                BUILDS POWER
+                
+                <span className='block text-5xl text-purple-600'>BUILDS POWER</span>
             </h1>
-            <p>
-                Stay focused. Stay consistent. See results.
+            <p className='text-[#94a3b8] mt-2 text-xl'>
+                Stay focused. Stay consistent. Stay strong. Your fitness journey is a marathon, not a sprint. Let's make every step count!
             </p>
             <div>
-                <button>Start Workout</button>
+                <button className='bg-pink-500  text-white shadow-[0_0_5px_#ff00ff] px-6 py-4 rounded-lg text-xl'>Start Workout</button>
+            </div>
             </div>
         </div>
+
         {/*Today's Goal*/}
         <div>
             <h2>Today's Goal</h2>
