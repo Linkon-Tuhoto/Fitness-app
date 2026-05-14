@@ -7,26 +7,29 @@ function Hero() {
   return (
     <div className='bg-[#050510] text-white'>
         {/*Header content*/}
-        <div>
+        <div className='grid grid-cols-2 pt-4 px-8'>
             <div>
-                <h1>Hey, Kingori! 
-                    <FaHandSparkles />
-                </h1>
-                <p>Ready to crush your goals today?</p>
+                <div className='text-white font-bold flex items-center gap-2 text-2xl'>
+                    <span>Hey, Kingori!</span> 
+                    <FaHandSparkles className='text-amber-400' />
+                </div>
+                <p className='text-[#94a3b8]'>Ready to crush your goals today?</p>
             </div>
+            <div className='flex justify-end  pr-15 gap-8'>
             <div>
-                <h1>
-                    <FaFire />
-                    12
-                </h1>
-                <p>
+                <div className='flex items-center gap-1'>
+                    <FaFire className='text-amber-700'/>
+                    <span className='text-white font-bold'>12</span>
+                </div>
+                <p className='text-[#94a3b8]'>
                     Day Streak
                 </p>
             </div>
             <div>
-                <p>
+                <p className='text-[#94a3b8]'>
                 <FaBell />
                 </p>
+            </div>
             </div>
         </div>
         {/*Hero image*/}
