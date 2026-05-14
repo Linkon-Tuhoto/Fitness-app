@@ -1,6 +1,8 @@
 import React from 'react';
 import heroImg from '../assets/hero-bg.jpeg';
-import { FaHandSparkles, FaFire, FaBell } from "react-icons/fa6";
+import { FaHandSparkles, FaFire, FaBell, FaDumbbell, FaChartLine} from "react-icons/fa6";
+import { GiWaterDrop } from "react-icons/gi";
+import { TbHeartRateMonitor } from "react-icons/tb";
 
 
 function Hero() {
@@ -95,19 +97,25 @@ function Hero() {
 
         {/*Quick Action links*/}
         <div>
-            <div>
+            <div className='w-[75%]'>
                 <h2>Quick Actions</h2>
-                <div>
-                    <p>Start Workout</p>
+                <div className='grid grid-cols-4 space-x-5'>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
+                    <FaDumbbell className='text-center'/>
+                    <p className=''>Start Workout</p>
                 </div>
-                <div>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
+                    <GiWaterDrop />
                     <p>Log Water</p>
                 </div>
-                <div>
-                    <p>BMI Calculator</p>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
+                    <TbHeartRateMonitor />
+                    <p>Track Heart Rate</p>
                 </div>
-                <div>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
+                    <FaChartLine />
                     <p>View Progress</p>
+                </div>
                 </div>
             </div>
 
