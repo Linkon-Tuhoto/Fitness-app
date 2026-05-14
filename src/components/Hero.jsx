@@ -5,7 +5,7 @@ import { FaHandSparkles, FaFire, FaBell } from "react-icons/fa6";
 
 function Hero() {
   return (
-    <div className='bg-[#050510] text-white'>
+    <div className='bg-[#050510] text-white pl-4'>
         {/*Header content*/}
         <div className='grid grid-cols-2 pt-4 px-8'>
             <div>
@@ -33,8 +33,8 @@ function Hero() {
             </div>
         </div>
         {/*Hero image*/}
-        <div>
-        <div className='h-[500px] w-[75%] bg-cover bg-center relative' style={{ backgroundImage: `url(${heroImg})` }} >
+        <div className='flex  gap-10 mt-8 px-8 '>
+        <div className='h-[500px] w-[75%] bg-cover bg-center relative border-2 border-purple-600/30 rounded-2xl' style={{ backgroundImage: `url(${heroImg})` }} >
             <div className='absolute inset-0 bg-black/50'></div>
             <div className='relative z-10 text-white px-8 mt-10 space-y-6 max-w-lg max-w-[12ch] leading-tight'>
             <p>Focus</p>
@@ -53,30 +53,35 @@ function Hero() {
         </div>
 
         {/*Today's Goal*/}
-        <div>
-            <h2>Today's Goal</h2>
-            <div>
+        <div className='border border-purple-500/13 rounded-lg  bg-slate-900/60 flex flex-col items-center justify-center w-[350px] h-[500px] mr-15'>
+            <h2 className='text-2xl font-bold'>Today's Goal</h2>
+            <div className='w-40 h-40 rounded-full flex items-center justify-center mt-6 bg-[conic-gradient(theme(colors.purple.600)_0%_75%,theme(colors.purple.950)_75%_100%)] p-4'>
+                <div className='w-full h-full rounded-full bg-black flex items-center justify-center'>
+                    <h2 className='text-3xl font-bold'>75%</h2>
+                </div>
+            </div>
+            <div className='flex items-center gap-8 mt-4 p-4  text-center'>
                 <div>
-                    <h2>
+                    <h2 className='text-3xl font-bold'>
                         450
                     </h2>
-                    <p>
+                    <p className='text-[#94a3b8]'>
                         Calories
                     </p>
                 </div>
                 <div>
-                    <h2>
+                    <h2 className='text-3xl font-bold'>
                         32 
                     </h2>
-                    <p>
+                    <p className='text-[#94a3b8]'>
                         Minutes
                     </p>
                 </div>
                 <div>
-                    <h2>
+                    <h2 className='text-3xl font-bold'>
                         5
                     </h2>
-                    <p>
+                    <p className='text-[#94a3b8]'>
                         Workouts
                     </p>
                 </div>
