@@ -96,7 +96,7 @@ function Hero() {
         </div>
 
         {/*Quick Action links*/}
-        <div className='px-8'>
+        <div className='px-8 flex gap-10 mt-10'>
             <div className='w-[75%]'>
                 <h2 className='text-2xl font-bold pt-5'>Quick Actions</h2>
                 <div className='grid grid-cols-4 space-x-10 gap-8'>
@@ -119,15 +119,15 @@ function Hero() {
                 </div>
             </div>
 
-            <div>
-                <h2>Water Intake</h2>
-                <div>
-                    <div>
+            <div className='bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 w-[350px] rounded-lg p-6 space-y-8'>
+                <h2 className='text-2xl font-bold'>Water Intake</h2>
+                <div className='space-y-8'>
+                    <div className='flex items-center justify-between mt-4'>
                         <div>
-                            <div>
-                                <GiWaterDrop />
-                                <span>1.8
-                                    <span>/3L</span>
+                            <div className='flex items-center space-x-2'>
+                                <GiWaterDrop className='text-3xl text-cyan-600'/>
+                                <span className='text-3xl font-bold'>1.8
+                                    <span className='text-xl text-[#94a3b8]'>/3L</span>
                                 </span>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ function Hero() {
                             60%
                         </div>
                     </div>
-                    <div></div>
+                    <div className="w-full h-[5px] mt-2 rounded-full bg-[linear-gradient(to_right,cyan_0%_60%,#94a3b8_60%_100%)]"></div>
                 </div>
             </div>
         </div>
