@@ -96,31 +96,47 @@ function Hero() {
         </div>
 
         {/*Quick Action links*/}
-        <div>
+        <div className='px-8'>
             <div className='w-[75%]'>
-                <h2>Quick Actions</h2>
-                <div className='grid grid-cols-4 space-x-5'>
-                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
-                    <FaDumbbell className='text-center'/>
-                    <p className=''>Start Workout</p>
+                <h2 className='text-2xl font-bold pt-5'>Quick Actions</h2>
+                <div className='grid grid-cols-4 space-x-10 gap-8'>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10 mt-6'>
+                    <FaDumbbell className='text-5xl text-pink-600'/>
+                    <p className='text-xl'>Start Workout</p>
                 </div>
-                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
-                    <GiWaterDrop />
-                    <p>Log Water</p>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10  mt-6'>
+                    <GiWaterDrop className='text-5xl text-cyan-600'/>
+                    <p className='text-xl'>Log Water</p>
                 </div>
-                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
-                    <TbHeartRateMonitor />
-                    <p>Track Heart Rate</p>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10  mt-6'>
+                    <TbHeartRateMonitor className='text-5xl text-purple-600'/>
+                    <p className='text-xl'>Track Heart Rate</p>
                 </div>
-                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 rounded-lg p-4  mt-6'>
-                    <FaChartLine />
-                    <p>View Progress</p>
+                <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10  mt-6'>
+                    <FaChartLine className='text-5xl text-purple-400'/>
+                    <p className='text-xl'>View Progress</p>
                 </div>
                 </div>
             </div>
 
             <div>
                 <h2>Water Intake</h2>
+                <div>
+                    <div>
+                        <div>
+                            <div>
+                                <GiWaterDrop />
+                                <span>1.8
+                                    <span>/3L</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            60%
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
             </div>
         </div>
 
