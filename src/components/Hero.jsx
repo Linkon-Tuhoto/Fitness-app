@@ -119,7 +119,7 @@ function Hero() {
                 </div>
             </div>
 
-            <div className='bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 w-[350px] rounded-lg p-6 space-y-8'>
+            <div className='bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 w-[350px] rounded-lg p-6 space-y-8 mr-15'>
                 <h2 className='text-2xl font-bold'>Water Intake</h2>
                 <div className='space-y-8'>
                     <div className='flex items-center justify-between mt-4'>
