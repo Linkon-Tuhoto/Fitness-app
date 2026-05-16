@@ -3,11 +3,12 @@ import heroImg from '../assets/hero-bg.jpeg';
 import { FaHandSparkles, FaFire, FaBell, FaDumbbell, FaChartLine} from "react-icons/fa6";
 import { GiWaterDrop } from "react-icons/gi";
 import { TbHeartRateMonitor } from "react-icons/tb";
+import vid from '../assets/vidfit.mp4';
 
 
 function Hero() {
   return (
-    <div className='bg-[#050510] text-white pl-4'>
+    <div className='bg-[#050510] text-white pl-4 ml-64 flex-1'>
         {/*Header content*/}
         <div className='grid grid-cols-2 pt-4 px-8'>
             <div>
@@ -138,6 +139,18 @@ function Hero() {
                     <div className="w-full h-[5px] mt-2 rounded-full bg-[linear-gradient(to_right,cyan_0%_60%,#94a3b8_60%_100%)]"></div>
                 </div>
             </div>
+        </div>
+
+        {/*Recomended Workouts*/}
+
+        <div>
+                <h2 className='text-2xl font-bold pt-5 px-8'>Recommended Workouts</h2>
+                <div>
+                    <div>
+                        <video src={vid} autoPlay muted loop controls />
+                        <div></div>
+                    </div>
+                </div>
         </div>
 
     </div>

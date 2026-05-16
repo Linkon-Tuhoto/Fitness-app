@@ -7,7 +7,7 @@ function Layouts() {
         <div className='flex'>
             <Aside />
             <div className='flex-1 '>
-                <Outlet />
+                <Outlet className="ml-64 p-4"/>
             </div>
         </div>
   )
