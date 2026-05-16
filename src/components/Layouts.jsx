@@ -1,12 +1,12 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+import Aside from './Aside'
 import { Outlet } from 'react-router-dom'
 
 function Layouts() {
   return (
         <div className='flex'>
-            <Sidebar />
-            <div className='flex-1 p-4'>
+            <Aside />
+            <div className='flex-1 '>
                 <Outlet />
             </div>
         </div>

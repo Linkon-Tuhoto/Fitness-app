@@ -6,9 +6,10 @@ import './App.css'
 
 import Hero from './components/Hero'
 import Aside from './components/Aside'
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Dashboard from './pages/Dashboard';
 import Workouts from './pages/Workouts';
+import Layouts from './components/Layouts';
 
 
 function App() {
@@ -16,13 +17,15 @@ function App() {
 
   return (
     <>
-      <Hero />
-      <Aside />
+    
       <Routes>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Layouts />} >
+        <Route path="/" index element={<Hero />} />
         <Route path="/workouts" element={<Workouts />} />
+        </Route>
         
       </Routes>
+    
     </>
   )
 }
