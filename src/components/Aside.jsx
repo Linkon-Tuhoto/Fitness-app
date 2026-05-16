@@ -1,41 +1,42 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Aside() {
   return (
     <div>
-      <aside>
+      <aside className='w-64 min-h-screen bg-[#050510] text-white p-6 flex flex-col  gap-10'>
         <h2>
           FitPulse
         </h2>
 
-        <div>
-          <button>
+        <div className='flex flex-col gap-6'>
+          <NavLink to="/">
             Dashboard
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/workouts">
             Workouts
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/nutrition">
             Nutrition
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/progress">
             Progress
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/calendar">
             Calendar
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/music">
             Music
-          </button>
+          </NavLink>
 
-          <button>
+          <NavLink to="/settings">
             Settings
-          </button>
+          </NavLink>
         </div>
 
         <div>
