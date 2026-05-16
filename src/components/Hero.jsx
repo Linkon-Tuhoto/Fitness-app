@@ -100,7 +100,7 @@ function Hero() {
         <div className='px-8 flex gap-10 mt-10'>
             <div className='w-[75%]'>
                 <h2 className='text-2xl font-bold pt-5'>Quick Actions</h2>
-                <div className='grid grid-cols-4 space-x-10 gap-8'>
+                <div className='grid grid-cols-4 space-x-10 '>
                 <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10 mt-6'>
                     <FaDumbbell className='text-5xl text-pink-500'/>
                     <p className='text-xl'>Start Workout</p>
@@ -146,9 +146,15 @@ function Hero() {
         <div>
                 <h2 className='text-2xl font-bold pt-5 px-8'>Recommended Workouts</h2>
                 <div>
-                    <div>
-                        <video src={vid} autoPlay muted loop controls />
-                        <div></div>
+                    <div className='relative w-[400px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
+                        <video src={vid} autoPlay muted loop controls className='object-cover w-full h-full' />
+                        <div className='absolute top-4 left-4 text-white z-10 '>
+                            <p className='backdrop-blur-sm px-3 py-1 text-sm rounded-full'>Beginner</p>
+                        </div>
+                        <div className='absolute bottom-4 left-4 text-white z-10 flex items-center gap-4 '>
+                            <h2>45 min</h2>
+                            <h2 className=''>320 Cal</h2>
+                        </div>
                     </div>
                 </div>
         </div>
