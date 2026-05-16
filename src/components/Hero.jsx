@@ -4,6 +4,8 @@ import { FaHandSparkles, FaFire, FaBell, FaDumbbell, FaChartLine} from "react-ic
 import { GiWaterDrop } from "react-icons/gi";
 import { TbHeartRateMonitor } from "react-icons/tb";
 import vid from '../assets/vidfit.mp4';
+import vid1 from '../assets/vid1.mp4';
+import vid2 from '../assets/vid2.mp4';
 
 
 function Hero() {
@@ -143,11 +145,44 @@ function Hero() {
 
         {/*Recomended Workouts*/}
 
-        <div>
+        <div className='mr-15'>
                 <h2 className='text-2xl font-bold pt-5 px-8'>Recommended Workouts</h2>
-                <div>
-                    <div className='relative w-[400px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
-                        <video src={vid} autoPlay muted loop controls className='object-cover w-full h-full' />
+                <div className='flex gap-8 mt-8'>
+                    <div className='relative w-[350px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
+                        <video src={vid}  muted loop controls className='object-cover w-full h-full' />
+                        <div className='absolute top-4 left-4 text-white z-10 '>
+                            <p className='backdrop-blur-sm px-3 py-1 text-sm rounded-full'>Beginner</p>
+                        </div>
+                        <div className='absolute bottom-4 left-4 text-white z-10 flex items-center gap-4 '>
+                            <h2>45 min</h2>
+                            <h2 className=''>320 Cal</h2>
+                        </div>
+                    </div>
+
+                    <div className='relative w-[350px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
+                        <video src={vid1}  muted loop controls className='object-cover w-full h-full' />
+                        <div className='absolute top-4 left-4 text-white z-10 '>
+                            <p className='backdrop-blur-sm px-3 py-1 text-sm rounded-full'>Beginner</p>
+                        </div>
+                        <div className='absolute bottom-4 left-4 text-white z-10 flex items-center gap-4 '>
+                            <h2>45 min</h2>
+                            <h2 className=''>320 Cal</h2>
+                        </div>
+                    </div>
+
+                    <div className='relative w-[350px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
+                        <video src={vid2}  muted loop controls className='object-cover w-full h-full' />
+                        <div className='absolute top-4 left-4 text-white z-10 '>
+                            <p className='backdrop-blur-sm px-3 py-1 text-sm rounded-full'>Beginner</p>
+                        </div>
+                        <div className='absolute bottom-4 left-4 text-white z-10 flex items-center gap-4 '>
+                            <h2>45 min</h2>
+                            <h2 className=''>320 Cal</h2>
+                        </div>
+                    </div>
+
+                    <div className='relative w-[350px] h-[250px] bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-lg '>
+                        <video src={vid}  muted loop controls className='object-cover w-full h-full' />
                         <div className='absolute top-4 left-4 text-white z-10 '>
                             <p className='backdrop-blur-sm px-3 py-1 text-sm rounded-full'>Beginner</p>
                         </div>
