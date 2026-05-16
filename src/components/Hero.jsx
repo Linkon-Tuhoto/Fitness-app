@@ -101,7 +101,7 @@ function Hero() {
                 <h2 className='text-2xl font-bold pt-5'>Quick Actions</h2>
                 <div className='grid grid-cols-4 space-x-10 gap-8'>
                 <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10 mt-6'>
-                    <FaDumbbell className='text-5xl text-pink-600'/>
+                    <FaDumbbell className='text-5xl text-pink-500'/>
                     <p className='text-xl'>Start Workout</p>
                 </div>
                 <div className='flex flex-col items-center gap-2 text-center bg-slate-900/60 border border-purple-500/13 hover:border-cyan-400/40 rounded-3xl p-10  mt-6'>
