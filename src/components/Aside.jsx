@@ -10,31 +10,45 @@ function Aside() {
         </h2>
 
         <div className='flex flex-col gap-6'>
-          <NavLink to="/">
+          <NavLink to="/" className={({isActive}) => ` px-5 py-3 rounded-lg text-center
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Dashboard
           </NavLink>
 
-          <NavLink to="/workouts">
+          <NavLink to="/workouts" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`}>
             Workouts
           </NavLink>
 
-          <NavLink to="/nutrition">
+          <NavLink to="/nutrition" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Nutrition
           </NavLink>
 
-          <NavLink to="/progress">
+          <NavLink to="/progress" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Progress
           </NavLink>
 
-          <NavLink to="/calendar">
+          <NavLink to="/calendar" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Calendar
           </NavLink>
 
-          <NavLink to="/music">
+          <NavLink to="/music" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Music
           </NavLink>
 
-          <NavLink to="/settings">
+          <NavLink to="/settings" className={({isActive}) => ` px-5 py-3 rounded-lg text-center 
+          ${isActive ? "bg-purple-600" : "hover:bg-gray-500"
+          }`} >
             Settings
           </NavLink>
         </div>
