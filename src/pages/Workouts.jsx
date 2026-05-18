@@ -75,18 +75,21 @@ function Workouts() {
         </div>
         <div>
           {/* Workout card videos*/}
-          <div>
-            <div>
+          <div className='grid grid-cols-3 gap-6'>
+            <div  className=' lg:col-span-2 '>
               <VideoCard 
               title={featured.title} 
-              video={featured.video} />
+              video={featured.video} 
+              height='h-135'
+              />
             </div>
-            <div>
+            <div className='grid grid-cols-2 gap-6'>
               {othervideos.map((workout) => (
                 <VideoCard 
                   key={workout.id} 
                   title={workout.title} 
-                  video={workout.video} />
+                  video={workout.video} 
+                  height='h-52'/>
               ))}
               
             </div>
