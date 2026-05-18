@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import vid from '../assets/vidfit.mp4';
 import VideoCard from '../components/VideoCard';
+
 
 function Workouts() {
   const workouts = [
@@ -28,10 +29,21 @@ function Workouts() {
       id: 5,
       title: 'Cardio Blast Workout',
       video: vid,
+    },
+    {
+      id: 6,
+      title: 'Cardio Blast Workout',
+      video: vid,
+    },
+    {
+      id: 7,
+      title: 'Cardio Blast Workout',
+      video: vid,
     }
   ]
   const featured = workouts[0]
   const othervideos = workouts.slice(1)
+  const [activevideo, setActivevideo] = useState(null);
   return (
     <div  className='ml-64 p-4 text-white bg-[#050510]' mt-8>
       {/* Header */}
@@ -75,20 +87,22 @@ function Workouts() {
         </div>
         <div>
           {/* Workout card videos*/}
-          <div className='grid grid-cols-3 gap-6'>
-            <div  className=' lg:col-span-2 '>
+          <div className='grid grid-cols-3 gap-6 '>
+            <div  className=' lg:col-span-1 '>
               <VideoCard 
               title={featured.title} 
               video={featured.video} 
               height='h-135'
               />
             </div>
-            <div className='grid grid-cols-2 gap-6'>
+            <div className='col-span-2 grid grid-cols-3 gap-6'>
               {othervideos.map((workout) => (
                 <VideoCard 
                   key={workout.id} 
                   title={workout.title} 
                   video={workout.video} 
+                  activevideo={activevideo === workout.video.id}
+                  setActivevideo={setActivevideo}
                   height='h-52'/>
               ))}
               
